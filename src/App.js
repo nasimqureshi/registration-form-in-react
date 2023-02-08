@@ -15,8 +15,6 @@ class App extends Component {
     return (
       <div>
         {this.state.isRegister ? <Greet></Greet> : <Register></Register>}
-        <Greet />
-        <Register />
       </div>
     )
   }
