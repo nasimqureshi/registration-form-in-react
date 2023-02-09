@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Register() {
+export default function Register(props) {
   return (
     <div className='container card p-3 mt-2 register-container'>
-    <h1>Registration Form </h1>
-      <form>
+    <h1 className='text-center'>Registration Form </h1>
+      <form onSubmit={props.submit}>
         <div className='form-group'>
             <label htmlFor='name'>Name:</label>
             <input type='text' name='name' className='form-control' />

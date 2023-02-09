@@ -1,14 +1,11 @@
 import React from 'react'
 
-export default function Greet() {
+export default function Greet(props) {
   return (
-    <div>
-      <form>
-        <div>
-            <label htmlFor='name'>Name</label>
-            <input type='text' name='name' />
-        </div>
-      </form>
-    </div>
+  <div className='container card p-3 mt2 register-container text-center'>
+      <h3>{props.name}</h3>
+      <h3>Thank you for joining us</h3>
+      <h3>Verification sent to {props.email}</h3>
+  </div>
   )
 }
